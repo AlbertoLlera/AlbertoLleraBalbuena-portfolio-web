@@ -1,0 +1,236 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+@font-face {
+    font-family: 'Bernathia';
+    src: url("Bernathia\ Andalissa.otf");
+}
+body{
+    display: flex;
+    img{
+        width: 100%;
+    }
+    aside{
+        display: flex;
+        flex-wrap: wrap;
+        width: 15%;
+        align-items: center;
+        justify-content: center;
+        background-color: purple;
+        height: 120vh;
+        img{
+            width: 50%;
+            margin-top: 1em;
+        }
+        nav{
+            /*margin-left: 5em;*/
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            height: 70vh;
+            a{
+            width: 100%;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+                /*
+                .azul{
+                    color: aqua;
+                }
+                */
+            }
+            a:hover{/*Habría que sacarlo fuera de la propiedad a la que intentas hacer el hover*/
+                color: aqua;
+            }
+        }
+        #iconos{
+           a{
+            text-decoration: none;
+            margin: 0.25em;
+            color: white;
+           }
+        }
+    }
+    main{
+        display: flex;
+        width: 85%;
+        flex-wrap: wrap;
+        nav{
+            display: none;
+        }
+        header{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            p{
+                font-size: 1.25em;
+                .negro{
+                    font-weight: 700;
+                }
+            }
+            h2{
+                font-family: 'Bernathia';
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+                color: aquamarine;
+                font-size: 4em;
+            }
+        }
+        figure{
+            display: flex;
+            width: 40%;
+        }
+        section{
+            display: flex;
+            flex-wrap: wrap;
+            width: 59%;
+            align-items: center;
+            justify-content: center;
+            #circAzul{
+                width: 10%;
+                height: 10vh;
+                background-color: dodgerblue;
+                border-radius: 50px;
+            }
+            #amarillo{
+                width: 10%;
+                height: 10vh;
+                background-color: lightyellow;
+                border-radius: 50px;
+            }
+            #verde{
+                width: 10%;
+                height: 10vh;
+                background-color: lightgreen;
+                border-radius: 50px;
+            }
+            h3{
+                width: 20%;
+                text-align: center;
+            }
+            form{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                #campos{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    input{
+                        width: 50%;
+                        display: flex;
+                        margin-left: 9em;
+                        margin-top: 1em;
+                    }
+                }
+                #enviar{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    justify-content: center;
+                    margin-top: 0.5em;
+                    margin-top: 1em;
+                    #boton{
+                        color: white;
+                        background-color: purple;
+                        width: 33%;
+                        font-size: 1.5em;
+                    }
+                }
+                #privacidad{
+                    display: flex;
+                    margin-top: 1em;
+                    color: purple;
+                }
+            }
+        }
+    }
+    footer{
+        display: none;
+    }
+}
+
+@media (max-width: 690px){
+    body aside{/* como he metido todo dentro de la etiqueta body luego en el móvil estás obligado a poner body con cada etiqueta o meterlo en una body*/
+        display: none;
+    }
+    body main{
+        /*Vaya lio de navs loco*/
+        width: 100%;
+        #fotoMenuMovil{
+            width: 100%;
+        }
+        nav{
+            display: none;
+            display: block;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+                a{
+                text-decoration: none;
+                color: black;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+            }
+        }
+        .abrir {
+            display: block;
+        }
+        .cerrar {
+            display: none;
+        }
+        #div_oculto {
+            display: none; /* Ocultar el menú inicialmente */
+        }
+        #abrir_menu:target .abrir {
+            display: none; /* Ocultar el botón de abrir cuando el menú está abierto */
+        }
+        
+        #abrir_menu:target .cerrar {
+            display: block; /* Mostrar el botón de cerrar cuando el menú está abierto */
+        }
+        
+        #abrir_menu:target #div_oculto {
+            display: block; /* Mostrar el menú cuando se hace clic en el botón de abrir */
+        }
+        header{
+            width: 100%;
+            margin: 1em;
+        }
+        figure{
+            display: none;
+        }
+        section{
+            width: 100%;
+           #circAzul, #amarillo, #verde{
+                height: 8vh;
+           }
+
+           form{
+            width: 100%;
+            #campos{
+                display: flex;
+                margin-left: -8em;
+            }
+            #enviar{
+                #boton{
+                    width: 30%;
+                }
+            }
+           }
+        }
+    }
+}

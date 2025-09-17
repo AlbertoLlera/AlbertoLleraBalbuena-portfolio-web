@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lola.css">
+    <link rel="stylesheet" href="icomoon/style.css">
+</head>
+<body>
+    <aside>
+        <img src="logo_banda_izda.png" alt="">
+        <nav>
+            <a href=""> <span class="azul">Inicio</span> </a>
+            <a href=""><span class="azul">Quien soy</span></a>
+            <a href="">Cómo trabajo</a>
+            <a href="">Consultas</a>
+            <a href="">Escuela de salud</a>
+            <a href="">Recursos gratuitos</a>
+            <a href="">Blog</a>
+            <a href="">Contacto</a>
+        </nav>
+        <div id="iconos">
+            <a href=""><span class="icon-facebook"></span></a>
+            <a href=""><span class="icon-instagram"></span></a>
+            <a href=""><span class="icon-youtube"></span></a>
+            <a href=""><span class="icon-linkedin2"></span></a>
+        </div>
+    </aside>
+    <main>
+        <nav>
+            <div id="fotoMenuMovil">
+            <img src="logo-movil.jfif" alt="">
+            </div>
+            <div id="abrir_menu">
+                <a href="#abrir_menu" class="abrir"><span class="icon-menu"></span></a>
+                <a href="#" class="cerrar"><span class="icon-cross"></span></a>
+                <div id="div_oculto">  <!--Poniendo un id en este div se han ocultado las a-->>
+                <a href=""><span class="azul">Inicio</span> </a>
+                <a href=""><span class="azul">Quien soy</span></a>
+                <a href="">Cómo trabajo</a>
+                <a href="">Consultas</a>
+                <a href="">Escuela de salud</a>
+                <a href="">Recursos gratuitos</a>
+                <a href="">Blog</a>
+                <a href="">Contacto</a>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <p>La actividad mental excesiva y las emociones mal gestionadas actúan como intensas descargas de energía que
+                afectan el equilibrio del organismo.
+                Es posible recuperar ese equilibrio atendiendo paralelamente el <span class="negro">bienestar físico y psicológico.</span></p>
+            <h2>Para lograrlo, escucharte es esencial</h2>
+        </header>
+        <figure>
+            <img src="foto-lola Nogueira.jfif" alt="">
+        </figure>
+        <section>
+            <!--meter cada uno de los circulos en un div y flexibilizarlos para que circulo y texto queden uno debajo de otro-->
+            <div id="circAzul"></div>
+            <h3>Diseño gráfico</h3>
+            <div id="amarillo">
+            </div>
+            <h3>Web</h3>
+            <div id="verde">
+            </div>
+            <h3>Marketing</h3>
+            <form action="lola.php" method="post" enctype="multipart/form-data">
+                <div id="campos">
+                    <label for=""></label><input type="text" name="nombre" size="40" maxlength="20" required placeholder="Usuario*">
+                    <label for=""></label><input type="email" name="mail" size="40" maxlength="20" required placeholder="Correo Electrónico*">
+                    <label for=""></label><input type="text" name="servicios" size="40" maxlength="20" placeholder="¿Qué servicio te interesa?">
+                </div>
+                <div id="enviar">
+                    <input id="boton" type="submit" name="enviar" value="Enviar ahora">
+                </div>
+                <div id="privacidad">
+                    <input type="checkbox" name="privacidad" value="1" required><label for="privacidad">Acepto las políticas de privacidad</label>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <a href=""><span class="icon-facebook"></span></a>
+        <a href=""><span class="icon-instagram"></span></a>
+        <a href=""><span class="icon-youtube"></span></a>
+        <a href=""><span class="icon-linkedin2"></span></a>
+    </footer>
+</body>
+</html>
